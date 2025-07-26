@@ -208,24 +208,42 @@ h2 {
 }
 
 
-
-    @media screen and (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .left, .right {
-        width: 100%;
-      }
-      .right {
-        display: none;
-        height: 0;
-        overflow: hidden;
-      }
-      .left {
-        height: 100vh;
-        overflow: hidden;
-      }
+@media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+      height: 100vh;
     }
+    .left, .right {
+      width: 100%;
+    }
+    .right {
+      display: none;
+      height: 0;
+      overflow: hidden;
+    }
+    .left {
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .input-id {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .input-id input {
+      width: 30px;
+      height: 45px;
+      font-size: 18px;
+    }
+    button {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
   </style>
 </head>
 <body>
